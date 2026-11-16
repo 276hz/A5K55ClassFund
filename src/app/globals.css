@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; }
+  body { @apply bg-slate-50 text-ink antialiased; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  :focus-visible { @apply outline outline-2 outline-offset-2 outline-brand; }
+}
+@layer components {
+  .card { @apply rounded-xl border border-slate-200 bg-white p-4; }
+  .label { @apply mb-1 block text-sm font-medium text-slate-700; }
+  .input { @apply min-h-11 w-full rounded-lg border border-slate-300 bg-white px-3 text-base text-ink placeholder:text-slate-400; }
+  .btn { @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-lg px-4 text-sm font-medium disabled:opacity-50; }
+  .btn-primary { @apply btn bg-brand text-white hover:bg-brand-dark; }
+  .btn-ghost { @apply btn border border-slate-300 bg-white text-ink hover:bg-slate-50; }
+  .btn-danger { @apply btn border border-red-300 bg-white text-red-700 hover:bg-red-50; }
+  .badge { @apply inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium ring-1 ring-inset; }
+  .th { @apply px-3 py-2 text-left text-xs font-medium uppercase tracking-wide text-slate-500; }
+  .td { @apply px-3 py-2 text-sm; }
+}
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }

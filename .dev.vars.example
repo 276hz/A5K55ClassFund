@@ -1,0 +1,4 @@
+NEXTJS_ENV=development
+# Set public Supabase values in .dev.vars for local Workers preview.
+NEXT_PUBLIC_SUPABASE_URL=https://YOUR-PROJECT-REF.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
